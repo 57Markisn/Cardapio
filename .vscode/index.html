@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -63,7 +65,7 @@
                 <button 
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
                 data-name="Hamburguer Smash"
-                data-priece="18.90"
+                data-price="18.90"
             >  
                 <i class="fa fa-cart-plus text-lg text-white"></i>
                 </button>
@@ -91,7 +93,7 @@
                 <button 
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
                 data-name="Hamburguer Double"
-                data-priece="32.90"
+                data-price="32.90"
             >  
                 <i class="fa fa-cart-plus text-lg text-white"></i>
                 </button>
@@ -119,7 +121,7 @@
                 <button 
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
                 data-name="Hamburguer Smash"
-                data-priece="35.90"
+                data-price="35.90"
             >  
                 <i class="fa fa-cart-plus text-lg text-white"></i>
                 </button>
@@ -147,7 +149,7 @@
                 <button 
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
                 data-name="Hamburguer da Casa"
-                data-priece="30"
+                data-price="30"
             >  
                 <i class="fa fa-cart-plus text-lg text-white"></i>
                 </button>
@@ -184,7 +186,7 @@
             <button 
             class="bg-gray-900 px-5 rounded add-to-cart-btn"
             data-name="Coca Lata"
-            data-priece="6"
+            data-price="6"
         >  
             <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
@@ -210,7 +212,7 @@
             <button 
             class="bg-gray-900 px-5 rounded add-to-cart-btn"
             data-name="Guaraná Lata"
-            data-priece="6"
+            data-price="6"
         >  
             <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
@@ -226,14 +228,16 @@
 
     </div>
     <!-- FIM MENU-->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-modal"
+    >
 
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
         
             <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
         
-            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold">Total:<span id="cart-total">0.00</span></p>
         
             <p class="font-bold mt-4">Endereço de entrega:</p>
             <input 
@@ -268,5 +272,7 @@
         </button>
     </footer>
     <!-- END BUTTON CARD FOOTER-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
 </body>
 </html
